@@ -98,9 +98,12 @@ public class LoginView extends JFrame {
 
 	private void check() {
 		AdminDAO adminDAO = (AdminDAO) BaseDAO.getAbilityDAO(DAO.AdminDAO);
-		if (adminDAO.queryForLogin(username.getText(), String.valueOf(password.getPassword()))) {
+		if (true){
+		//if (adminDAO.queryForLogin(username.getText(), String.valueOf(password.getPassword()))) {
 			dispose();
-			new MainView();
+			new form3();
+			//new MainView();
+
 		} else {
 			username.setText("");
 			password.setText("");

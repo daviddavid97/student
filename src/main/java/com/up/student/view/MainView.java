@@ -29,6 +29,8 @@ import com.up.student.DAO;
 import com.up.student.base.BaseDAO;
 import com.up.student.dao.StudentDAO;
 
+import static com.up.student.dao.StudentDAO.student;
+
 /**
  * 模块说明： 首页
  * 
@@ -55,6 +57,7 @@ public class MainView extends JFrame {
 
 	public MainView(int a) {
 		if (a ==1){
+		    student ="student";
 			com.up.student.AppConstants.STUDENT_NAME = "姓名";
 			com.up.student.AppConstants.STUDENT_SNO = "人员号";
 			com.up.student.AppConstants.STUDENT_SEX = "性别";
@@ -68,6 +71,7 @@ public class MainView extends JFrame {
 					AppConstants.STUDENT_MARK, AppConstants.STUDENT_EMAIL, AppConstants.STUDENT_TEL};
 		}
 		else if (a == 2){
+			student ="student1";
 			com.up.student.AppConstants.STUDENT_NAME = "订单名";
 			com.up.student.AppConstants.STUDENT_SNO = "负责员工";
 			com.up.student.AppConstants.STUDENT_SEX = "程度";
@@ -82,6 +86,7 @@ public class MainView extends JFrame {
 
 		}
 		else if(a==3){
+			student ="student2";
 			com.up.student.AppConstants.STUDENT_NAME = "顾客名";
 			com.up.student.AppConstants.STUDENT_SNO = "编号";
 			com.up.student.AppConstants.STUDENT_SEX = "性别";

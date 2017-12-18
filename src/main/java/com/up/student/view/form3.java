@@ -3,6 +3,7 @@ package com.up.student.view;
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import com.up.student.AppConstants;
 
 public class form3 {
     private JPanel panel1;
@@ -15,7 +16,7 @@ public class form3 {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
                 super.mouseClicked(mouseEvent);
-                System.exit(0);
+                new MainView(1);
             }
 
         });
@@ -23,12 +24,16 @@ public class form3 {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
                 super.mouseClicked(mouseEvent);
+
+                new MainView(2);
+
             }
         });
         button3.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
                 super.mouseClicked(mouseEvent);
+                new MainView(3);
             }
         });
     }

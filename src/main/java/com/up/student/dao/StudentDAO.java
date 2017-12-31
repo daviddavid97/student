@@ -64,7 +64,7 @@ public class StudentDAO extends BaseDAO {
 		if (stu == null) {
 			return result;
 		}
-		String sql = "delete from"+ student +"where name=? and sno=?";
+		String sql = "delete from "+ student +" where name=? and sno=?";
 		String[] param = { stu.getName(), stu.getSno() };
 		int rowCount = db.executeUpdate(sql, param);
 		if (rowCount == 1) {
@@ -108,7 +108,7 @@ public class StudentDAO extends BaseDAO {
 		}
 		List<Student> stus = new ArrayList<Student>();
 		int i = 0;
-		String sql = "select * from "+student +"where name like ?";
+		String sql = "select * from "+student +" where name like ?";
 		String[] param = { "%" + name + "%" };
 		rs = db.executeQuery(sql, param);
 		try {
